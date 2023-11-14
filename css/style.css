@@ -264,6 +264,19 @@ p {
 section {
   padding: 30px 0;
 }
+section .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+section .section-header p {
+  margin: auto;
+  font-weight: 300;
+}
+@media all and (min-width: 768px) {
+  section .section-header {
+    max-width: 70%;
+  }
+}
 
 .container {
   max-width: 100%;
@@ -297,6 +310,11 @@ section {
 @media all and (min-width: 768px) {
   .col-md-50p {
     width: 50%;
+  }
+}
+@media all and (min-width: 768px) {
+  .col-md-33p {
+    width: 33.33%;
   }
 }
 @media all and (min-width: 992px) {
@@ -541,6 +559,42 @@ section {
   }
 }
 
+.infobox-team, .infobox {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.infobox .infobox-inner {
+  border: 1px solid #f0f0f0;
+  padding: 25px 25px;
+  border-radius: 2px;
+}
+.infobox .infobox-inner:hover {
+  box-shadow: 0 8px 20px #f0f0f0;
+}
+.infobox .infobox-inner img {
+  width: 100%;
+}
+.infobox .infobox-inner p {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.infobox-team {
+  margin-top: 60px;
+  position: relative;
+}
+.infobox-team img {
+  width: 100%;
+}
+.infobox-team .infobox-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+}
+
 .btn-secondary, .btn-primary {
   border-radius: 30px;
   display: inline-block;
@@ -559,8 +613,8 @@ section {
 }
 
 .btn-secondary {
-  background-color: #1ba4ce;
+  background-color: #30383b;
 }
 .btn-secondary:hover {
-  background-color: #30383b;
+  background-color: #1ba4ce;
 }/*# sourceMappingURL=style.css.map */

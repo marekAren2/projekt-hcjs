@@ -24,10 +24,10 @@ color: #fff;
 // ASK: moj wpis sprawdz z projektem
 .btn-secondary {
     @extend %btn;
-    background-color: $primary-color;
+    background-color: $button-color;
     
      &:hover {
-    background-color: $button-color;
+    background-color: $primary-color;
     }
 
 }
