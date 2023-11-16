@@ -1,5 +1,9 @@
 %common-infobox {
-    padding: 15px 0;
+    // ASK: poprawka
+    // padding: 15px 0;
+    //ASK: dopisan spr
+    margin-top: 30px;
+    padding: 0 10px;
     text-align: center;
 }
 
@@ -21,6 +25,9 @@
 
         p {
             font-weight: 300;
+            // ASK: ja dopisalem nic nie daje
+            //ODP bo to nie dla team patrz ponizej
+            // margin-top: 5px;
             margin-bottom: 30px;
         }
 
@@ -34,14 +41,70 @@
     img {
         width: 100%;
     }
-    .infobox-caption {
-    // .infobox-team-caption {
+    .infobox-team-caption {
+        // .infobox-team-caption {
         position: absolute;
         left: 0;
         right: 0;
         // ASK: co robi marg: auto?
         margin: auto;
         width: 80%;
+        // ASK: dla wysuniecia wizytowki plynnie
+        transition: all .3s;
+        // ASK: efekt nalozenia wizytowki / caption
+        bottom: -50px; 
+        background-color: #fff;
+
+        &:hover {
+            // ASK: efekt wysuniecia wizytowki i shadow
+            box-shadow: 0 5px 20px #f0f0f0;
+            padding-bottom: 30px;
+        }
+        // ASK: wytlumacz ten zapis
+        &:hover .team-social-icons {
+            // ASK: efekt pokazania ikonki
+            height: 35px;
+        }
+        
+        // ASK: ja dopisalem paragraf caly spr?:
+        p {
+
+        }
+        
+        .team-social-icons {
+            transition: all .3s;
+            height: 0;
+            // ASK: wyjasnij overflow
+            overflow: hidden;
+
+            
+            a { 
+                // ASK: efekt wziecia w prostokąt ikony
+                border: 1px solid $secondary-color;
+                height: 35px;
+                width: 35px;
+                font-size: 20px;
+                display: inline-block;   
+                line-height: 35px;
+                text-align: center;
+                color: $secondary-color;
+                // ASK: koleczko z ramki trick
+                border-radius: 50%;
+                // ASK: co zmienia margin?
+                // ODP: po dodaniu a odsuwa ikony w poziomie
+                margin: 0 10px;
+                
+                &:hover {
+                    border: 1px solid $primary-color ;
+                    color: #fff;
+                    background-color: $primary-color;
+                    // ASK: box-shadow gdzie jest
+                    box-shadow: 0 5px 20px #f0f0f0;
+               }
+            
+            }
+        }
+
     }
         
     }

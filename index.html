@@ -10,7 +10,7 @@
     <!-- // ASK :0.5 czemu w font google jest najpierw href= a pozniej rel= -->
     <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- // ASK 1: twoj link posiada jakiegos hasha key sha integrity? o co chodzi? pobrane spod video -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
     <!-- //ASK 2: jak bezpiecznie i zgodnie dolaczac zewnetrzne zaoby chyba wyszukalem po cdn font awesome ;
          rozne wersje czy bedzie zgodnosc np wsteczna w zewnetrznych zasobach jak je wybierac i z nimi postepowc-->
          <!-- ASK 3: jak sprawdzac te zewnetrzne includy zalaczenia czy sa poprawne jest sposob pre wczytania? -->
@@ -176,8 +176,8 @@
             </header>
             <div class="row">
                 <div class="infobox-team col col-md-33p">
-                    <div class="infobox-caption">
-                        <img src="/img/team-1.jpg" alt="team 1">
+                    <img src="/img/team-1.jpg" alt="team 1">
+                    <div class="infobox-team-caption">
                         <h3>Jenny Austin</h3>
                         <p>Thai massage</p>
                         <div class="team-social-icons">
@@ -191,8 +191,8 @@
                     </div>
                 </div>
                 <div class="infobox-team col col-md-33p">
-                    <div class="infobox-caption">
-                        <img src="/img/team-3.jpg" alt="team 3">
+                    <img src="/img/team-3.jpg" alt="team 3">
+                    <div class="infobox-team-caption">
                         <h3>David Hannan</h3>
                         <p>Thai massage</p>
                         <div class="team-social-icons">
@@ -203,8 +203,8 @@
                     </div>
                 </div>
                 <div class="infobox-team col col-md-33p">
-                    <div class="infobox-caption">
-                        <img src="/img/team-2.jpg" alt="team 2">
+                    <img src="/img/team-2.jpg" alt="team 2">
+                    <div class="infobox-team-caption">
                         <h3>Cheryl Charris</h3>
                         <p>Thai massage</p>
                         <div class="team-social-icons">
@@ -216,6 +216,31 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="appointment" id="appointment">
+        <div class="desktop-background" style="background-image: url(./img/contact-bg.jpg);"></div>
+        <form id="appointment-form" value="appointment-form">
+            <input type="text" name="name" placeholder="name" id="appointment-name" 
+            class="form-field">
+            <input type="email" name="email" placeholder="email address" id="appointment-email" 
+            class="form-field">
+            <input type="tel" name="phone" placeholder="phone number" id="appointment-phone" 
+            class="form-field">
+            <select name="" id="appointment-service" class="form-field">
+                <option value="">-- select service --</option>
+                <option value="normal">Normal</option>
+                <option value="vip">Vip</option>
+            </select>
+            <input type="date" name="date" id="appointment-date" 
+            class="form-field">
+            <input type="time" name="time" id="appointment-time" 
+            class="form-field">
+            <textarea name="message" placeholder="your notes" id="appointment-message" cols="30" rows="10" 
+            class="form-field"></textarea>
+            <button type="submit" class="btn-form"> Make an appointment </button>
+            <!-- ASK: miejsce na komentarze error -->
+            <p class="appointmet-message"></p>
+        </form>
     </section>
     <script src="js/main.js"></script>
 </body>

@@ -253,6 +253,10 @@ h2 {
   font-size: 42px;
 }
 
+h3 {
+  font-size: 22px;
+}
+
 a {
   transition: all 0.3s;
 }
@@ -285,7 +289,7 @@ section .section-header p {
   margin: 0 auto;
 }
 
-@media all and (max-with: 992px) {
+@media all and (min-with: 992px) {
   .container {
     max-width: 960px;
   }
@@ -293,7 +297,7 @@ section .section-header p {
     padding: 60px 0;
   }
 }
-@media all and (max-with: 1200px) {
+@media all and (min-with: 1200px) {
   .container {
     max-width: 1140px;
   }
@@ -560,7 +564,8 @@ section .section-header p {
 }
 
 .infobox-team, .infobox {
-  padding: 15px 0;
+  margin-top: 30px;
+  padding: 0 10px;
   text-align: center;
 }
 
@@ -587,12 +592,55 @@ section .section-header p {
 .infobox-team img {
   width: 100%;
 }
-.infobox-team .infobox-caption {
+.infobox-team .infobox-team-caption {
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
   width: 80%;
+  transition: all 0.3s;
+  bottom: -50px;
+  background-color: #fff;
+}
+.infobox-team .infobox-team-caption:hover {
+  box-shadow: 0 5px 20px #f0f0f0;
+  padding-bottom: 30px;
+}
+.infobox-team .infobox-team-caption:hover .team-social-icons {
+  height: 35px;
+}
+.infobox-team .infobox-team-caption .team-social-icons {
+  transition: all 0.3s;
+  height: 0;
+  overflow: hidden;
+}
+.infobox-team .infobox-team-caption .team-social-icons a {
+  border: 1px solid #473452;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 35px;
+  text-align: center;
+  color: #473452;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.infobox-team .infobox-team-caption .team-social-icons a:hover {
+  border: 1px solid #1ba4ce;
+  color: #fff;
+  background-color: #1ba4ce;
+  box-shadow: 0 5px 20px #f0f0f0;
+}
+
+.appointment {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.appointment form {
+  width: 100%;
+  background-color: #1ba4ce;
 }
 
 .btn-secondary, .btn-primary {

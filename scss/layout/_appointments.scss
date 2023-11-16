@@ -1,0 +1,20 @@
+.appointment {
+    // ASK : nic nie zmienia
+    // ODP: literowka w klasie
+    //ASK: czemu padd:0 nie miesci na ekranie? a z //padd: wydaje sie mniejszy obszar
+    padding: 0;
+    @include flexbox;
+
+    .desktop-background {
+
+    }
+    
+    form {
+        // ASK: nic nie zmienia
+        width: 100%;
+        // ASK: dlaczego kolor sie nie wyswietla nie ma w devtools wpisany recznie tam dziala
+        // ODP: literowka w nadrzednej klasie -efekt niedziala ta nizej  w nestingu
+        
+        background-color: $primary-color;
+    }
+}
